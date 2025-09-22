@@ -1,0 +1,9 @@
+
+1 Fatura       | para 1 cliente          |(1-1)| Uma fatura só para um cliente.
+_______________________________________________|
+1 Funcionario  | Para muitos cliente     |(1-n)| Um funcionario faz serviço para muitos clientes.
+_______________________________________________|
+Muitos produtos| Para muitos funcionarios|(n-n)|
+_______________________________________________|
+Muitos produtos| Para uma fatura         |(n-1)| Vários produtos para uma só fatura.
+_______________________________________________|
