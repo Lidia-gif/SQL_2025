@@ -1,0 +1,12 @@
+Alunos:
+(id-aluno(PK), nome , data_nascimento,morada,curso(FK));    
+
+
+Funcionários:
+(id_funcionario(PK), Nome,Departamento, telefone(CK));  
+
+Professores:
+(id_professo(PK)r,Nome ,especialidade, telefone(CK), email(CK),id_funcionario(CK);(FK));    
+
+Cursos:
+(id_curso(PK), nome,carga_horaria);        
