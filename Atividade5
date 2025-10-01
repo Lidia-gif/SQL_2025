@@ -1,0 +1,20 @@
+---------------------ESCOLA(BD)------------------
+Alunos| (PK)
+      | Turma
+      | Nome dos Alunos
+      | Nomes dos Pais
+
+Professors| (PK)
+          | Nome
+          | Número de Telefone
+          | Morada
+
+Cursos| (PK)
+      | Sala
+      | Nome
+      | ID
+
+Funcionários|(PK)
+            | Nome
+            | Funções
+            | Morada
