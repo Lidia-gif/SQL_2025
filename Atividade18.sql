@@ -29,6 +29,10 @@ SELECT * FROM Produtos;
 
 SELECT cod_prodID , valor_unit
 FROM produtos
+WHERE desconto IS NULL OR desconto = 0;
+
+UPDATE produtos
+SET desconto = 0
 WHERE desconto IS NULL;
 
 SELECT produtosID , quantidade
