@@ -23,6 +23,7 @@ ALTER TABLE Customers
 ADD ( ContactName VARCHAR(20),
 	  Region VARCHAR(20),
       Country VARCHAR(20)
+   
 );
 
 
@@ -75,6 +76,29 @@ VALUES (1,"Peixe", 65, 150, 1),
        (3,"Chá", 22, 250, 3),
        (4,"Boneca", 98, 200, 2);
        
+SELECT ProductName , Unitsinstock
+FROM Products
+WHERE CategoryID = 1 AND Unitsinstock > 0 
+ORDER BY Unitsinstock DESC;
+ 
 SELECT * FROM Products 
 ORDER BY CategoryID DESC;
-   
+
+-- Pergunta 4
+CREATE TABLE Encomendas (  
+OrderID INT PRIMARY KEY,
+Quantity INT,
+ProductID INT,
+FOREIGN KEY (ProductID) REFERENCES products(ProductID)
+); 
+
+SELECT ProductID, Quantity 
+FROM Encomendas
+WHERE OrderID IN (10812 ,10296, 10251,10641);
+
+SELECT * FROM Encomendas;
+
+INSERT INTO Encomendas (OrderID , Quantity, ProductID)
+VALUES(10812 , 13,1),
+	  (10296, 20,2),
+      (10251, 19,3);
